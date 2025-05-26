@@ -33,8 +33,6 @@ cd torch-cuda
 # Install with uv (recommended)
 uv sync
 
-# Or install with pip
-pip install -e .
 ```
 
 ### Installation Options
@@ -42,20 +40,14 @@ pip install -e .
 Choose the dependencies that match your needs:
 
 ```bash
-# Basic installation (PyTorch + NumPy only)
+# Basic installation (PyTorch v2.7.0+cu128 only)
 uv sync
 
 # Development environment
 uv sync --extra dev
 
-# Data science toolkit
-uv sync --extra data
-
-# Machine learning utilities
-uv sync --extra ml
-
-# Monitoring and experiment tracking
-uv sync --extra monitoring
+# Data science toolkit Machine learning utilities
+uv sync --extra extras
 
 # Everything included
 uv sync --extra all

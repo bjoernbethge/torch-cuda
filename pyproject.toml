@@ -44,22 +44,19 @@ dev = [
 ]
 
 # Additional ML utilities
-ml = [
+extras = [
     "mlflow>=2.22.0",
     "polars>=1.30.0",
     "plotly-express>=0.4.1",
     "dash-bootstrap-components>=2.0.3",
-]
-
-# Performance monitoring
-monitoring = [
     "torch-tb-profiler>=0.4.3",
     "psutil>=5.9.0"
 ]
 
+
 # All optional dependencies
 all = [
-    "torch-cuda[dev,ml,monitoring]",
+    "torch-cuda[dev,extras]",
 ]
 
 [project.urls]
