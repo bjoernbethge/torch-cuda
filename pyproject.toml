@@ -28,6 +28,7 @@ classifiers = [
 
 dependencies = [
     "torch>=2.7.0,<3.0.0",
+    
 ]
 
 [project.optional-dependencies]
@@ -42,8 +43,6 @@ dev = [
     "pre-commit>=3.6.0",
 ]
 
-
-
 # Additional ML utilities
 ml = [
     "mlflow>=2.22.0",
@@ -54,14 +53,13 @@ ml = [
 
 # Performance monitoring
 monitoring = [
-    "wandb>=0.16.0",           # Experiment tracking
-    "tensorboard>=2.15.0",     # TensorBoard logging
-    "psutil>=5.9.0",           # System monitoring
+    "torch-tb-profiler>=0.4.3",
+    "psutil>=5.9.0"
 ]
 
 # All optional dependencies
 all = [
-    "torch-cuda[dev,data,ml,monitoring]",
+    "torch-cuda[dev,ml,monitoring]",
 ]
 
 [project.urls]
