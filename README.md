@@ -72,6 +72,8 @@ uv sync --extra extras
 
 # 🌟 Everything included (the full experience)
 uv sync --extra all
+# Add new packages
+uv add torchvision
 ```
 
 ---
